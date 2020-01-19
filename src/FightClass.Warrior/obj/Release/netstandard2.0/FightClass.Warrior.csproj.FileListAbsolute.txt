@@ -1,2 +1,0 @@
-C:\Users\orfasanti\Downloads\FightClass\src\FightClass.Warrior\obj\Release\netstandard2.0\FightClass.Warrior.AssemblyInfoInputs.cache
-C:\Users\orfasanti\Downloads\FightClass\src\FightClass.Warrior\obj\Release\netstandard2.0\FightClass.Warrior.AssemblyInfo.cs
