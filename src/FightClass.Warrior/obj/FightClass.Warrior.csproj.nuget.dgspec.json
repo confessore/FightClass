@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\orfasanti\\Downloads\\FightClass\\src\\FightClass.Warrior\\FightClass.Warrior.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\orfasanti\\Downloads\\FightClass\\src\\FightClass.Warrior\\FightClass.Warrior.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\orfasanti\\Downloads\\FightClass\\src\\FightClass.Warrior\\FightClass.Warrior.csproj",
+        "projectName": "FightClass.Warrior",
+        "projectPath": "C:\\Users\\orfasanti\\Downloads\\FightClass\\src\\FightClass.Warrior\\FightClass.Warrior.csproj",
+        "packagesPath": "C:\\Users\\orfasanti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\orfasanti\\Downloads\\FightClass\\src\\FightClass.Warrior\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\orfasanti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Users\\orfasanti\\source\\repos\\ClassicExport\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Costura.Fody": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "TreeTask": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
