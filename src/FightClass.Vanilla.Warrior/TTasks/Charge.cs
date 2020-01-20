@@ -1,5 +1,5 @@
-﻿using FightClass.Warrior.Helpers;
-using FightClass.Warrior.Services.Interfaces;
+﻿using FightClass.Vanilla.Warrior.Helpers;
+using FightClass.Vanilla.Warrior.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using TreeTask;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TTasks
 {
     internal class Charge : TTask
     {

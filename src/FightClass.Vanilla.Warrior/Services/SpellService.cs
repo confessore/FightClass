@@ -1,7 +1,7 @@
-﻿using FightClass.Warrior.Services.Interfaces;
+﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
 using wManager.Wow.Class;
 
-namespace FightClass.Warrior.Services
+namespace FightClass.Vanilla.Warrior.Services
 {
     internal class SpellService : ISpellService
     {

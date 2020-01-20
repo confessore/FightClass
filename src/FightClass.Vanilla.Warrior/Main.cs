@@ -1,6 +1,6 @@
-﻿using FightClass.Warrior.Services;
-using FightClass.Warrior.Services.Interfaces;
-using FightClass.Warrior.TTasks;
+﻿using FightClass.Vanilla.Warrior.Services;
+using FightClass.Vanilla.Warrior.Services.Interfaces;
+using FightClass.Vanilla.Warrior.TTasks;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using wManager.Wow.Enums;

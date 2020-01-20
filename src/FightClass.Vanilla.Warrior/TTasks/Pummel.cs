@@ -1,10 +1,10 @@
-﻿using FightClass.Warrior.Helpers;
-using FightClass.Warrior.Services.Interfaces;
+﻿using FightClass.Vanilla.Warrior.Helpers;
+using FightClass.Vanilla.Warrior.Services.Interfaces;
 using TreeTask;
 using wManager.Wow.Class;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TTasks
 {
     internal class Pummel : TTask
     {

@@ -1,6 +1,6 @@
 ﻿using wManager.Wow.Class;
 
-namespace FightClass.Warrior.Services.Interfaces
+namespace FightClass.Vanilla.Warrior.Services.Interfaces
 {
     internal interface ISpellService
     {

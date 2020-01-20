@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace FightClass.Warrior.Services.Interfaces
+namespace FightClass.Vanilla.Warrior.Services.Interfaces
 {
     internal interface IRegistrationService
     {

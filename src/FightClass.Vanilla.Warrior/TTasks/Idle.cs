@@ -1,7 +1,7 @@
-﻿using FightClass.Warrior.Services.Interfaces;
+﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
 using TreeTask;
 
-namespace FightClass.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TTasks
 {
     internal class Idle : TTask
     {

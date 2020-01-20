@@ -1,9 +1,9 @@
-﻿using FightClass.Warrior.Services.Interfaces;
+﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
 
-namespace FightClass.Warrior.Services
+namespace FightClass.Vanilla.Warrior.Services
 {
     internal class RegistrationService : IRegistrationService
     {

@@ -1,11 +1,11 @@
-﻿using FightClass.Warrior.Services.Interfaces;
+﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
 using robotManager.Helpful;
 using System;
 using System.Threading.Tasks;
 using wManager.Wow.Helpers;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Warrior.Services
+namespace FightClass.Vanilla.Warrior.Services
 {
     internal class RotationService : IRotationService
     {

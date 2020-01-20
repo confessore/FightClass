@@ -1,10 +1,10 @@
-﻿using FightClass.Warrior.Services.Interfaces;
-using FightClass.Warrior.TTasks;
+﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
+using FightClass.Vanilla.Warrior.TTasks;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TreeTask;
 
-namespace FightClass.Warrior.Services
+namespace FightClass.Vanilla.Warrior.Services
 {
     internal class TreeTaskService : ITreeTaskService
     {

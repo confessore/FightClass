@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using wManager.Wow.Helpers;
 
-namespace FightClass.Warrior.Helpers
+namespace FightClass.Vanilla.Warrior.Helpers
 {
     internal static class StanceHelper
     {
