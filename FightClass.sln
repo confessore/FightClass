@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{667A617C-6896-42F2-ADB0-2373332A1B2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FightClass.Warrior", "src\FightClass.Warrior\FightClass.Warrior.csproj", "{4C9071C5-8A9A-434B-AC9D-CDF897049AC2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FightClass.Warrior", "src\FightClass.Warrior\FightClass.Warrior.csproj", "{3FDEDCF8-05F2-451E-8A0C-316C7888EC88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,17 +15,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C9071C5-8A9A-434B-AC9D-CDF897049AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C9071C5-8A9A-434B-AC9D-CDF897049AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C9071C5-8A9A-434B-AC9D-CDF897049AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C9071C5-8A9A-434B-AC9D-CDF897049AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FDEDCF8-05F2-451E-8A0C-316C7888EC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FDEDCF8-05F2-451E-8A0C-316C7888EC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FDEDCF8-05F2-451E-8A0C-316C7888EC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FDEDCF8-05F2-451E-8A0C-316C7888EC88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{667A617C-6896-42F2-ADB0-2373332A1B2E} = {CD266C83-B714-4217-8A6A-0B705EAA4B26}
-		{4C9071C5-8A9A-434B-AC9D-CDF897049AC2} = {667A617C-6896-42F2-ADB0-2373332A1B2E}
+		{3FDEDCF8-05F2-451E-8A0C-316C7888EC88} = {667A617C-6896-42F2-ADB0-2373332A1B2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1FA4AF5-041B-48DD-A5FD-D2A82B7D1A17}
