@@ -20,5 +20,7 @@ namespace FightClass.Wotlk.Paladin.Services.Interfaces
         Spell DivineStorm { get; }
         Spell HammerOfWrath { get; }
         Spell HolyWrath { get; }
+        Spell SealOfCorruption { get; }
+        Spell SealOfVengeance { get; }
     }
 }

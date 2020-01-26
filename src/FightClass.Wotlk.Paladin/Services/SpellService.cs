@@ -21,5 +21,7 @@ namespace FightClass.Wotlk.Paladin.Services
         public Spell DivineStorm => new Spell("Divine Storm");
         public Spell HammerOfWrath => new Spell("Hammer of Wrath");
         public Spell HolyWrath => new Spell("Holy Wrath");
+        public Spell SealOfCorruption => new Spell("Seal of Corruption");
+        public Spell SealOfVengeance => new Spell("Seal of Vengeance");
     }
 }
