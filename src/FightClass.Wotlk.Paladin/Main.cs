@@ -29,6 +29,12 @@ public class Main : ICustomClass
             .AddSingleton<Judgement>()
             .AddSingleton<Heal>()
             .AddSingleton<ArcaneTorrent>()
+            .AddSingleton<Consecration>()
+            .AddSingleton<Exorcism>()
+            .AddSingleton<CrusaderStrike>()
+            .AddSingleton<DivineStorm>()
+            .AddSingleton<HammerOfWrath>()
+            .AddSingleton<HolyWrath>()
             .BuildServiceProvider();
     }
 

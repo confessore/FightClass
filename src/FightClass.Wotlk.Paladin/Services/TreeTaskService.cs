@@ -14,6 +14,12 @@ namespace FightClass.Wotlk.Paladin.Services
         readonly Judgement judgement;
         readonly Heal heal;
         readonly ArcaneTorrent arcaneTorrent;
+        readonly Consecration consecration;
+        readonly Exorcism exorcism;
+        readonly CrusaderStrike crusaderStrike;
+        readonly DivineStorm divineStorm;
+        readonly HammerOfWrath hammerOfWrath;
+        readonly HolyWrath holyWrath;
 
         public TreeTaskService(
             Idle idle,
@@ -21,7 +27,13 @@ namespace FightClass.Wotlk.Paladin.Services
             Blessing blessing,
             Judgement judgement,
             Heal heal,
-            ArcaneTorrent arcaneTorrent)
+            ArcaneTorrent arcaneTorrent,
+            Consecration consecration,
+            Exorcism exorcism,
+            CrusaderStrike crusaderStrike,
+            DivineStorm divineStorm,
+            HammerOfWrath hammerOfWrath,
+            HolyWrath holyWrath)
         {
             this.idle = idle;
             this.seal = seal;
@@ -29,6 +41,12 @@ namespace FightClass.Wotlk.Paladin.Services
             this.judgement = judgement;
             this.heal = heal;
             this.arcaneTorrent = arcaneTorrent;
+            this.consecration = consecration;
+            this.exorcism = exorcism;
+            this.crusaderStrike = crusaderStrike;
+            this.divineStorm = divineStorm;
+            this.hammerOfWrath = hammerOfWrath;
+            this.holyWrath = holyWrath;
         }
 
         TreeTask.TreeTask Idle =>
@@ -39,7 +57,13 @@ namespace FightClass.Wotlk.Paladin.Services
                 blessing,
                 judgement,
                 heal,
-                arcaneTorrent
+                arcaneTorrent,
+                consecration,
+                exorcism,
+                crusaderStrike,
+                divineStorm,
+                hammerOfWrath,
+                holyWrath
             });
 
         TreeTask.TreeTask Dead =>

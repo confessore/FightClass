@@ -13,5 +13,13 @@ namespace FightClass.Wotlk.Paladin.Services
         public Spell HolyLight => new Spell("Holy Light");
         public Spell FlashOfLight => new Spell("Flash of Light");
         public Spell ArcaneTorrent => new Spell("Arcane Torrent");
+        public Spell Consecration => new Spell("Consecration");
+        public Spell Replenishment => new Spell("Replenishment");
+        public Spell TheArtOfWar => new Spell("The Art of War");
+        public Spell Exorcism => new Spell("Exorcism");
+        public Spell CrusaderStrike => new Spell("Crusader Strike");
+        public Spell DivineStorm => new Spell("Divine Storm");
+        public Spell HammerOfWrath => new Spell("Hammer of Wrath");
+        public Spell HolyWrath => new Spell("Holy Wrath");
     }
 }

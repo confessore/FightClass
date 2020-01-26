@@ -12,5 +12,13 @@ namespace FightClass.Wotlk.Paladin.Services.Interfaces
         Spell HolyLight { get; }
         Spell FlashOfLight { get; }
         Spell ArcaneTorrent { get; }
+        Spell Consecration { get; }
+        Spell Replenishment { get; }
+        Spell TheArtOfWar { get; }
+        Spell Exorcism { get; }
+        Spell CrusaderStrike { get; }
+        Spell DivineStorm { get; }
+        Spell HammerOfWrath { get; }
+        Spell HolyWrath { get; }
     }
 }

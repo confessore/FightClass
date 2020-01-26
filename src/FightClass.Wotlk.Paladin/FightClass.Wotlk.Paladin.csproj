@@ -83,7 +83,13 @@
     <Compile Include="Services\TreeTaskService.cs" />
     <Compile Include="TTasks\ArcaneTorrent.cs" />
     <Compile Include="TTasks\Blessing.cs" />
+    <Compile Include="TTasks\Consecration.cs" />
+    <Compile Include="TTasks\CrusaderStrike.cs" />
+    <Compile Include="TTasks\DivineStorm.cs" />
+    <Compile Include="TTasks\Exorcism.cs" />
+    <Compile Include="TTasks\HammerOfWrath.cs" />
     <Compile Include="TTasks\Heal.cs" />
+    <Compile Include="TTasks\HolyWrath.cs" />
     <Compile Include="TTasks\Idle.cs" />
     <Compile Include="TTasks\Judgement.cs" />
     <Compile Include="TTasks\Seal.cs" />
