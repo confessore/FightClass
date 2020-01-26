@@ -1,9 +1,9 @@
-﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
+﻿using FightClass.Wotlk.Paladin.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
 
-namespace FightClass.Vanilla.Warrior.Services
+namespace FightClass.Wotlk.Paladin.Services
 {
     internal class RegistrationService : IRegistrationService
     {
@@ -24,7 +24,6 @@ namespace FightClass.Vanilla.Warrior.Services
         {
             serviceProvider.GetRequiredService<ISpellService>();
             serviceProvider.GetRequiredService<IRotationService>();
-            serviceProvider.GetRequiredService<ITreeTaskService>();
             return Task.CompletedTask;
         }
     }
