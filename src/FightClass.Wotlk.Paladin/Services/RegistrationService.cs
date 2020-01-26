@@ -24,6 +24,7 @@ namespace FightClass.Wotlk.Paladin.Services
         {
             serviceProvider.GetRequiredService<ISpellService>();
             serviceProvider.GetRequiredService<IRotationService>();
+            serviceProvider.GetRequiredService<ITreeTaskService>();
             return Task.CompletedTask;
         }
     }
