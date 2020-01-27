@@ -25,7 +25,7 @@ namespace FightClass.Wotlk.Warrior.TTasks
 
         public override void Execute()
         {
-            if (!spellService.BattleStance.HaveBuff)
+            if (spellService.BattleStance.HaveBuff)
                 spellService.Charge.Launch();
             else
                 spellService.BattleStance.Launch();
