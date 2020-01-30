@@ -57,7 +57,6 @@ namespace FightClass.Wotlk.Paladin.Services
                 blessing,
                 judgement,
                 heal,
-                arcaneTorrent,
                 consecration,
                 exorcism,
                 crusaderStrike,
