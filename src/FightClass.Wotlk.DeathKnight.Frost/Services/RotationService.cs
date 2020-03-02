@@ -1,11 +1,11 @@
-﻿using FightClass.Wotlk.Shaman.Services.Interfaces;
+﻿using FightClass.Wotlk.DeathKnight.Frost.Services.Interfaces;
 using robotManager.Helpful;
 using System;
 using System.Threading.Tasks;
 using wManager.Wow.Helpers;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Wotlk.Shaman.Services
+namespace FightClass.Wotlk.DeathKnight.Frost.Services
 {
     internal class RotationService : IRotationService
     {

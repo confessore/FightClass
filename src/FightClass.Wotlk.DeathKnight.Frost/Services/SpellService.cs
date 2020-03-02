@@ -1,7 +1,7 @@
-﻿using FightClass.Wotlk.Shaman.Services.Interfaces;
+﻿using FightClass.Wotlk.DeathKnight.Frost.Services.Interfaces;
 using wManager.Wow.Class;
 
-namespace FightClass.Wotlk.Shaman.Services
+namespace FightClass.Wotlk.DeathKnight.Frost.Services
 {
     internal class SpellService : ISpellService
     {

@@ -1,4 +1,4 @@
-﻿using FightClass.Wotlk.Shaman.Services.Interfaces;
+﻿using FightClass.Wotlk.DeathKnight.Frost.Services.Interfaces;
 using TreeTask;
 
 namespace FightClass.Wotlk.DeathKnight.Frost.TTasks

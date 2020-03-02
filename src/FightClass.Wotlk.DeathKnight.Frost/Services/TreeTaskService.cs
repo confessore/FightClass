@@ -1,11 +1,10 @@
-﻿using FightClass.Wotlk.DeathKnight.Frost.TTasks;
-using FightClass.Wotlk.Shaman.Services.Interfaces;
-using FightClass.Wotlk.Shaman.TTasks;
+﻿using FightClass.Wotlk.DeathKnight.Frost.Services.Interfaces;
+using FightClass.Wotlk.DeathKnight.Frost.TTasks;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TreeTask;
 
-namespace FightClass.Wotlk.Shaman.Services
+namespace FightClass.Wotlk.DeathKnight.Frost.Services
 {
     internal class TreeTaskService : ITreeTaskService
     {

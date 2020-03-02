@@ -1,7 +1,7 @@
 ﻿using FightClass.Wotlk.DeathKnight.Frost.TTasks;
-using FightClass.Wotlk.Shaman.Services;
-using FightClass.Wotlk.Shaman.Services.Interfaces;
-using FightClass.Wotlk.Shaman.TTasks;
+using FightClass.Wotlk.DeathKnight.Frost.Services;
+using FightClass.Wotlk.DeathKnight.Frost.Services.Interfaces;
+using FightClass.Wotlk.DeathKnight.Frost.TTasks;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using wManager.Wow.Enums;

@@ -1,6 +1,6 @@
 ﻿using wManager.Wow.Class;
 
-namespace FightClass.Wotlk.Shaman.Services.Interfaces
+namespace FightClass.Wotlk.DeathKnight.Frost.Services.Interfaces
 {
     internal interface ISpellService
     {

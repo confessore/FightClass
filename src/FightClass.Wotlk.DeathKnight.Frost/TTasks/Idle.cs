@@ -1,6 +1,6 @@
 ﻿using TreeTask;
 
-namespace FightClass.Wotlk.Shaman.TTasks
+namespace FightClass.Wotlk.DeathKnight.Frost.TTasks
 {
     internal class Idle : TTask
     {
