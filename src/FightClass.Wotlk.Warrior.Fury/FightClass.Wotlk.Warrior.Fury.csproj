@@ -82,11 +82,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Interfaces\IRegistrationService.cs" />
     <Compile Include="Services\Interfaces\IRotationService.cs" />
     <Compile Include="Services\Interfaces\ISpellService.cs" />
     <Compile Include="Services\Interfaces\ITreeTaskService.cs" />
-    <Compile Include="Services\RegistrationService.cs" />
     <Compile Include="Services\RotationService.cs" />
     <Compile Include="Services\SpellService.cs" />
     <Compile Include="Services\TreeTaskService.cs" />

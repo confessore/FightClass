@@ -1,28 +1,28 @@
 ﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
-using TreeTask;
+using TreeTaskSharp;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Vanilla.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TreeTasks
 {
-    internal class HeroicStrike : TTask
+    internal class SunderArmor : TreeTask
     {
         readonly ISpellService spellService;
 
-        public HeroicStrike(
+        public SunderArmor(
             ISpellService spellService)
         {
             this.spellService = spellService;
         }
 
-        public override int Priority => 97;
+        public override int Priority => 101;
 
         public override bool Activate()
         {
             return ObjectManager.Me.InCombat
                 && ObjectManager.Target != null
-                && ObjectManager.Me.Rage > 49
-                && ObjectManager.Target.HealthPercent > 20
-                && spellService.HeroicStrike.IsSpellUsable
+                && ObjectManager.Me.Rage > 59
+                && spellService.SunderArmor.KnownSpell
+                && spellService.SunderArmor.IsSpellUsable
                 && !spellService.Bloodthirst.IsSpellUsable
                 && !spellService.MortalStrike.IsSpellUsable
                 && !spellService.ShieldSlam.IsSpellUsable
@@ -31,7 +31,7 @@ namespace FightClass.Vanilla.Warrior.TTasks
 
         public override void Execute()
         {
-            spellService.HeroicStrike.Launch();
+            spellService.SunderArmor.Launch();
         }
     }
 }

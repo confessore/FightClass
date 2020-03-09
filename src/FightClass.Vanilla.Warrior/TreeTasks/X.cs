@@ -1,34 +1,34 @@
 ﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
-using TreeTask;
+using TreeTaskSharp;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Vanilla.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TreeTasks
 {
-    internal class BattleShout : TTask
+    internal class X : TreeTask
     {
         readonly ISpellService spellService;
 
-        public BattleShout(
+        public X(
             ISpellService spellService)
         {
             this.spellService = spellService;
         }
 
-        public override int Priority => 1002;
+        public override int Priority => 999;
 
         public override bool Activate()
         {
             return ObjectManager.Me.InCombat
+                && ObjectManager.Target != null
                 && ObjectManager.Me.Rage > 9
-                && spellService.BattleShout.KnownSpell
-                && spellService.BattleShout.IsSpellUsable
-                && !spellService.BattleShout.HaveBuff
-                && !ObjectManager.Me.Silenced;
+                && ObjectManager.Target.HealthPercent <= 20
+                && spellService.Execute.KnownSpell
+                && spellService.Execute.IsSpellUsable;
         }
 
         public override void Execute()
         {
-            spellService.BattleShout.Launch();
+            spellService.Execute.Launch();
         }
     }
 }

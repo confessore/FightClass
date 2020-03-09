@@ -1,12 +1,11 @@
 ﻿using FightClass.Vanilla.Warrior.Helpers;
 using FightClass.Vanilla.Warrior.Services.Interfaces;
-using TreeTask;
-using wManager.Wow.Class;
+using TreeTaskSharp;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Vanilla.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TreeTasks
 {
-    internal class Pummel : TTask
+    internal class Pummel : TreeTask
     {
         readonly ISpellService spellService;
 

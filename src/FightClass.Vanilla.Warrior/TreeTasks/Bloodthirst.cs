@@ -1,20 +1,20 @@
 ﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
-using TreeTask;
+using TreeTaskSharp;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Vanilla.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TreeTasks
 {
-    internal class Whirlwind : TTask
+    internal class Bloodthirst : TreeTask
     {
         readonly ISpellService spellService;
 
-        public Whirlwind(
+        public Bloodthirst(
             ISpellService spellService)
         {
             this.spellService = spellService;
         }
 
-        public override int Priority => 99;
+        public override int Priority => 100;
 
         public override bool Activate()
         {
@@ -22,14 +22,13 @@ namespace FightClass.Vanilla.Warrior.TTasks
                 && ObjectManager.Target != null
                 && ObjectManager.Me.Rage > 29
                 && ObjectManager.Target.HealthPercent > 20
-                && spellService.Whirlwind.KnownSpell
-                && spellService.Whirlwind.IsSpellUsable
-                && !spellService.Bloodthirst.IsSpellUsable;
+                && spellService.Bloodthirst.KnownSpell
+                && spellService.Bloodthirst.IsSpellUsable;
         }
 
         public override void Execute()
         {
-            spellService.Whirlwind.Launch();
+            spellService.Bloodthirst.Launch();
         }
     }
 }

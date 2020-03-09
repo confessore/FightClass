@@ -1,9 +1,9 @@
-﻿using FightClass.Wotlk.Warrior.Fury.Services.Interfaces;
+﻿using FightClass.Wotlk.Druid.Restoration.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
 
-namespace FightClass.Wotlk.Warrior.Fury.Services
+namespace FightClass.Wotlk.Druid.Restoration.Services
 {
     internal class RegistrationService : IRegistrationService
     {
@@ -24,7 +24,6 @@ namespace FightClass.Wotlk.Warrior.Fury.Services
         {
             serviceProvider.GetRequiredService<ISpellService>();
             serviceProvider.GetRequiredService<IRotationService>();
-            serviceProvider.GetRequiredService<ITreeTaskService>();
             return Task.CompletedTask;
         }
     }

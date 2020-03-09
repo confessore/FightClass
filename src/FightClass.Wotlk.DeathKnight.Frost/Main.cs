@@ -1,5 +1,4 @@
-﻿using FightClass.Wotlk.DeathKnight.Frost.TTasks;
-using FightClass.Wotlk.DeathKnight.Frost.Services;
+﻿using FightClass.Wotlk.DeathKnight.Frost.Services;
 using FightClass.Wotlk.DeathKnight.Frost.Services.Interfaces;
 using FightClass.Wotlk.DeathKnight.Frost.TTasks;
 using Microsoft.Extensions.DependencyInjection;

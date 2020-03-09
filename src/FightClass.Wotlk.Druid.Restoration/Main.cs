@@ -1,6 +1,5 @@
-﻿using FightClass.Wotlk.Warrior.Fury.Services;
-using FightClass.Wotlk.Warrior.Fury.Services.Interfaces;
-using FightClass.Wotlk.Warrior.Fury.TTasks;
+﻿using FightClass.Wotlk.Druid.Restoration.Services;
+using FightClass.Wotlk.Druid.Restoration.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using wManager.Wow.Enums;
@@ -19,28 +18,13 @@ public class Main : ICustomClass
     IServiceProvider ConfigureServices()
     {
         return new ServiceCollection()
+            .AddSingleton<IRegistrationService, RegistrationService>()
             .AddSingleton<ISpellService, SpellService>()
             .AddSingleton<IRotationService, RotationService>()
-            .AddSingleton<ITreeTaskService, TreeTaskService>()
-            .AddSingleton<Idle>()
-            .AddSingleton<Charge>()
-            .AddSingleton<Bloodrage>()
-            .AddSingleton<BattleShout>()
-            .AddSingleton<BerserkerStance>()
-            .AddSingleton<Pummel>()
-            .AddSingleton<Bloodthirst>()
-            .AddSingleton<MortalStrike>()
-            .AddSingleton<ShieldSlam>()
-            .AddSingleton<Whirlwind>()
-            .AddSingleton<HeroicStrike>()
-            .AddSingleton<SunderArmor>()
-            .AddSingleton<X>()
-            .AddSingleton<VictoryRush>()
-            .AddSingleton<Slam>()
             .BuildServiceProvider();
     }
 
-    public float Range => 4f;
+    public float Range => 29f;
     internal static bool Running { get; set; }
 
     public void Dispose()
@@ -50,9 +34,10 @@ public class Main : ICustomClass
 
     public async void Initialize()
     {
-        if (ObjectManager.Me.WowClass == WoWClass.Warrior)
+        if (ObjectManager.Me.WowClass == WoWClass.Druid)
         {
             Running = true;
+            //await serviceProvider.GetRequiredService<IRegistrationService>().InitializeAsync();
             await serviceProvider.GetRequiredService<IRotationService>().RotationAsync();
         }
     }

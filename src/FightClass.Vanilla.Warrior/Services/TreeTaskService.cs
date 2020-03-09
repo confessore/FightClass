@@ -1,27 +1,11 @@
 ﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
-using FightClass.Vanilla.Warrior.TTasks;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using TreeTask;
+using FightClass.Vanilla.Warrior.TreeTasks;
+using TreeTaskSharp;
 
 namespace FightClass.Vanilla.Warrior.Services
 {
     internal class TreeTaskService : ITreeTaskService
     {
-        readonly Idle idle;
-        readonly Charge charge;
-        readonly Pummel pummel;
-        readonly BerserkerStance berserkerStance;
-        readonly Bloodrage bloodrage;
-        readonly BattleShout battleShout;
-        readonly Bloodthirst bloodthirst;
-        readonly MortalStrike mortalStrike;
-        readonly ShieldSlam shieldSlam;
-        readonly Whirlwind whirlwind;
-        readonly HeroicStrike heroicStrike;
-        readonly SunderArmor sunderArmor;
-        readonly X execute;
-
         public TreeTaskService(
             Idle idle,
             Charge charge,
@@ -37,27 +21,9 @@ namespace FightClass.Vanilla.Warrior.Services
             SunderArmor sunderArmor,
             X execute)
         {
-            this.idle = idle;
-            this.charge = charge;
-            this.pummel = pummel;
-            this.berserkerStance = berserkerStance;
-            this.bloodrage = bloodrage;
-            this.battleShout = battleShout;
-            this.bloodthirst = bloodthirst;
-            this.mortalStrike = mortalStrike;
-            this.shieldSlam = shieldSlam;
-            this.whirlwind = whirlwind;
-            this.heroicStrike = heroicStrike;
-            this.sunderArmor = sunderArmor;
-            this.execute = execute;
-        }
-
-        TreeTask.TreeTask Idle =>
-            new TreeTask.TreeTask(0, new List<TTask>
-            {
+            TreeTaskHandler = new TreeTaskHandler(
                 idle,
                 charge,
-                //new Intercept(),
                 pummel,
                 berserkerStance,
                 bloodrage,
@@ -68,27 +34,9 @@ namespace FightClass.Vanilla.Warrior.Services
                 whirlwind,
                 heroicStrike,
                 sunderArmor,
-                execute
-            });
-
-        TreeTask.TreeTask Dead =>
-            new TreeTask.TreeTask(1, new List<TTask> { });
-
-        List<TreeTask.TreeTask> Collection =>
-            new List<TreeTask.TreeTask>()
-            {
-                Idle,
-                Dead
-            };
-
-        TreeTask.TreeTask TreeTask =>
-            new TreeTask.TreeTask(100, Collection);
-
-        public Task ExecuteTreeTaskAsync()
-        {
-            if (TreeTask.Activate())
-                TreeTask.Execute();
-            return Task.CompletedTask;
+                execute);
         }
+
+        public TreeTaskHandler TreeTaskHandler { get; }
     }
 }

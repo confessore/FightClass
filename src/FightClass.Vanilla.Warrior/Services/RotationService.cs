@@ -17,7 +17,7 @@ namespace FightClass.Vanilla.Warrior.Services
             this.treeTaskService = treeTaskService;
         }
 
-        public async Task RotationAsync()
+        public Task RotationAsync()
         {
             while (Main.Running)
             {
@@ -25,14 +25,14 @@ namespace FightClass.Vanilla.Warrior.Services
                 {
                     if (Conditions.InGameAndConnectedAndAliveAndProductStartedNotInPause)
                         if (Fight.InFight && ObjectManager.Me.Target > 0)
-                            await treeTaskService.ExecuteTreeTaskAsync();
+                            treeTaskService.TreeTaskHandler.Execute();
                 }
                 catch (Exception e)
                 {
                     Logging.WriteError("[My fightclass] ERROR: " + e);
                 }
-                await Task.Delay(10);
             }
+            return Task.CompletedTask;
         }
     }
 }

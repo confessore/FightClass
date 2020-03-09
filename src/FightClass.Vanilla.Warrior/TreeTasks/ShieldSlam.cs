@@ -1,10 +1,10 @@
 ﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
-using TreeTask;
+using TreeTaskSharp;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Vanilla.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TreeTasks
 {
-    internal class ShieldSlam : TTask
+    internal class ShieldSlam : TreeTask
     {
         readonly ISpellService spellService;
 

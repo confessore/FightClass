@@ -1,9 +1,9 @@
 ﻿using FightClass.Vanilla.Warrior.Services.Interfaces;
-using TreeTask;
+using TreeTaskSharp;
 
-namespace FightClass.Vanilla.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TreeTasks
 {
-    internal class Idle : TTask
+    internal class Idle : TreeTask
     {
         readonly ISpellService spellService;
 

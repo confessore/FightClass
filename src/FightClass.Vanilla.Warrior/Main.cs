@@ -1,6 +1,6 @@
 ﻿using FightClass.Vanilla.Warrior.Services;
 using FightClass.Vanilla.Warrior.Services.Interfaces;
-using FightClass.Vanilla.Warrior.TTasks;
+using FightClass.Vanilla.Warrior.TreeTasks;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using wManager.Wow.Enums;
@@ -19,7 +19,6 @@ public class Main : ICustomClass
     IServiceProvider ConfigureServices()
     {
         return new ServiceCollection()
-            .AddSingleton<IRegistrationService, RegistrationService>()
             .AddSingleton<ISpellService, SpellService>()
             .AddSingleton<IRotationService, RotationService>()
             .AddSingleton<ITreeTaskService, TreeTaskService>()
@@ -52,7 +51,6 @@ public class Main : ICustomClass
         if (ObjectManager.Me.WowClass == WoWClass.Warrior)
         {
             Running = true;
-            await serviceProvider.GetRequiredService<IRegistrationService>().InitializeAsync();
             await serviceProvider.GetRequiredService<IRotationService>().RotationAsync();
         }
     }

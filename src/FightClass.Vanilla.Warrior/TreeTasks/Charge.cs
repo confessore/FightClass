@@ -1,16 +1,11 @@
 ﻿using FightClass.Vanilla.Warrior.Helpers;
 using FightClass.Vanilla.Warrior.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TreeTask;
+using TreeTaskSharp;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Vanilla.Warrior.TTasks
+namespace FightClass.Vanilla.Warrior.TreeTasks
 {
-    internal class Charge : TTask
+    internal class Charge : TreeTask
     {
         readonly ISpellService spellService;
 

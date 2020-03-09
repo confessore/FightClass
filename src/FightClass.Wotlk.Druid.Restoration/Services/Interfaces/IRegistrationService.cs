@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace FightClass.Wotlk.Warrior.Fury.Services.Interfaces
+namespace FightClass.Wotlk.Druid.Restoration.Services.Interfaces
 {
     internal interface IRegistrationService
     {
