@@ -1,10 +1,10 @@
 ﻿using FightClass.Wotlk.Warrior.Fury.Services.Interfaces;
-using TreeTask;
+using TreeTaskSharp;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Wotlk.Warrior.Fury.TTasks
+namespace FightClass.Wotlk.Warrior.Fury.TreeTasks
 {
-    internal class Bloodthirst : TTask
+    internal class Bloodthirst : TreeTask
     {
         readonly ISpellService spellService;
 

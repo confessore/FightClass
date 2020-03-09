@@ -1,6 +1,6 @@
 ﻿using FightClass.Wotlk.Warrior.Fury.Services;
 using FightClass.Wotlk.Warrior.Fury.Services.Interfaces;
-using FightClass.Wotlk.Warrior.Fury.TTasks;
+using FightClass.Wotlk.Warrior.Fury.TreeTasks;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using wManager.Wow.Enums;

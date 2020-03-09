@@ -1,9 +1,9 @@
 ﻿using FightClass.Wotlk.Warrior.Fury.Services.Interfaces;
-using TreeTask;
+using TreeTaskSharp;
 
-namespace FightClass.Wotlk.Warrior.Fury.TTasks
+namespace FightClass.Wotlk.Warrior.Fury.TreeTasks
 {
-    internal class Idle : TTask
+    internal class Idle : TreeTask
     {
         readonly ISpellService spellService;
 

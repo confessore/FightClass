@@ -1,10 +1,10 @@
 ﻿using FightClass.Wotlk.Warrior.Fury.Services.Interfaces;
-using TreeTask;
+using TreeTaskSharp;
 using wManager.Wow.ObjectManager;
 
-namespace FightClass.Wotlk.Warrior.Fury.TTasks
+namespace FightClass.Wotlk.Warrior.Fury.TreeTasks
 {
-    internal class Pummel : TTask
+    internal class Pummel : TreeTask
     {
         readonly ISpellService spellService;
 

@@ -71,9 +71,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TreeTask, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TreeTask.2.0.1\lib\netstandard2.0\TreeTask.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="TreeTaskSharp, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\TreeTaskSharp.1.0.2\lib\net45\TreeTaskSharp.dll</HintPath>
     </Reference>
     <Reference Include="wManager">
       <HintPath>..\..\..\..\..\Downloads\WRobot\WRobot\Bin\wManager.dll</HintPath>

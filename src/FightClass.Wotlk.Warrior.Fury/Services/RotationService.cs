@@ -25,7 +25,7 @@ namespace FightClass.Wotlk.Warrior.Fury.Services
                 {
                     if (Conditions.InGameAndConnectedAndAliveAndProductStartedNotInPause)
                         if (Fight.InFight && ObjectManager.Me.Target > 0)
-                            await treeTaskService.ExecuteTreeTaskAsync();
+                            treeTaskService.TreeTaskHandler.Execute();
                 }
                 catch (Exception e)
                 {

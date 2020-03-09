@@ -1,9 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using TreeTaskSharp;
 
 namespace FightClass.Wotlk.Warrior.Fury.Services.Interfaces
 {
     internal interface ITreeTaskService
     {
-        Task ExecuteTreeTaskAsync();
+        TreeTaskHandler TreeTaskHandler { get; }
     }
 }
